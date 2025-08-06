@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Research Assist</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0051a2, #003b80);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background-color: #003b80;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideUp 1s ease;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    ul.services li {
+      margin-bottom: 1.25rem;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background-color: #0051a2;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #003b80;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eeeeee;
+      color: #444;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(-30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/1024px-Commons-logo.svg.png" alt="Campus Research Assist Logo">
+    <h1>Campus Research Assist</h1>
+    <p>Research support for labs, students, and startups — by undergrads, for researchers.</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <ul class="services">
+      <li><strong>Literature Review Support:</strong> Find and summarize relevant papers, create annotated bibliographies.</li>
+      <li><strong>Data Annotation:</strong> Label fMRI, EEG, DTI images or spreadsheets.</li>
+      <li><strong>Citation Cleanup:</strong> Format citations (APA/MLA), fix Mendeley/Zotero libraries.</li>
+      <li><strong>AI-Aided Drafting:</strong> Abstracts, summaries, slide content, and lay summaries powered by GPT.</li>
+      <li><strong>File & Data Organization:</strong> Clean and sort research folders and rename datasets.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Tell us what you need via email or form.</li>
+      <li>We assign a student researcher based on your task.</li>
+      <li>We deliver within your timeframe — fast, accurate, and affordable.</li>
+    </ol>
+    <a class="btn" href="#contact">Get Started</a>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <strong>campusresearchassist@gmail.com</strong></p>
+    <p>Or <a class="btn" href="mailto:campusresearchassist@gmail.com">click here to send an email</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Campus Research Assist. Built by students.</p>
+  </footer>
+</body>
+</html>
